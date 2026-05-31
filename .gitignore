@@ -1,0 +1,7 @@
+# Root level IDE files
+.idea/
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
