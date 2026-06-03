@@ -46,4 +46,9 @@ export async function downloadAssignmentSubmissionFile(id) {
   })
 
   return response
+
+export async function createAndAssignAssignment(payload) {
+  const response = await apiClient.post('/api/manager/assignments/direct', payload)
+  return response.data
+}
 }

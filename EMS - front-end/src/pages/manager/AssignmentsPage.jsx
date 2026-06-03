@@ -15,6 +15,7 @@ import {
   reassignAssignment,
   rejectAssignment,
   updateAssignmentDeadline,
+  createAndAssignAssignment,
 } from '../../features/assignments/managerAssignmentService'
 
 
@@ -147,6 +148,23 @@ async function handleCancel(id, payload) {
       setIsCreating(false)
     }
   }
+
+  async function handleDirect(payload) {
+  setErrorMessage('')
+  setSuccessMessage('')
+  setIsCreating(true)
+  try {
+    const createdAssignment = await createAndAssignAssignment(payload)
+    setAssignments((current) => [createdAssignment, ...current])
+    setSuccessMessage('Assignment created and assigned successfully.')
+    return true
+  } catch (error) {
+    setErrorMessage(error?.response?.data?.message || 'Failed to create and assign.')
+    return false
+  } finally {
+    setIsCreating(false)
+  }
+}
 
   async function handleAssign(id, payload) {
     setErrorMessage('')
@@ -312,7 +330,8 @@ async function handleCancel(id, payload) {
       ) : null}
 
       <CreateAssignmentDraftForm
-        onSubmit={handleCreate}
+        onSubmitDraft={handleCreate}
+        onSubmitDirect={handleDirect}
         isSubmitting={isCreating}
       />
 
