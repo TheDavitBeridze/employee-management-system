@@ -8,7 +8,7 @@
 
 ## What is this?
 
-EMS is a full-stack web application for managing employees inside an organization. It covers everything from user roles and department structure to leave requests, attendance tracking, task assignments, and audit logs — all in one place.
+EMS is a full-stack web application for managing employees inside an organization. It covers everything from user roles and department structure to leave requests, attendance tracking, task assignments, and audit logs - all in one place.
 
 The main idea was to build something that actually works as a complete system, not just a bunch of separate tools that don't talk to each other.
 
@@ -19,52 +19,52 @@ The main idea was to build something that actually works as a complete system, n
 ### Login
 ![Login](screenshots/login.png)
 
-### Admin — Dashboard
+### Admin - Dashboard
 ![Admin Dashboard](screenshots/admin_dashboard.png)
 
-### Admin — Organization Structure
+### Admin - Organization Structure
 ![Org Structure](screenshots/admin_org-structure.png)
 
-### Admin — Add Employee
+### Admin - Add Employee
 ![Add Employee](screenshots/admin_add-employee.png)
 
-### Admin — Search & Filter Employees
+### Admin - Search & Filter Employees
 ![Search Employees](screenshots/admin_search-employee.png)
 
-### Admin — Department CRUD
+### Admin - Department CRUD
 ![Departments](screenshots/admin_department-CRUD.png)
 
-### Admin — Audit Logs
+### Admin - Audit Logs
 ![Audit Logs](screenshots/admin_audit-logs.png)
 
-### Manager — Dashboard
+### Manager - Dashboard
 ![Manager Dashboard](screenshots/manager_dashboard.png)
 
-### Manager — Department Employees
+### Manager - Department Employees
 ![Department Employees](screenshots/manager_department-employees.png)
 
-### Manager — Manage Leave Requests
+### Manager - Manage Leave Requests
 ![Leave Approvals](screenshots/manager_manage-leave-requests.png)
 
-### Manager — Assignments
+### Manager - Assignments
 ![Manager Assignments](screenshots/manager_assignments-CRUD.png)
 
-### Manager — Attendance
+### Manager - Attendance
 ![Manager Attendance](screenshots/manager_attendance.png)
 
-### Employee — Dashboard
+### Employee - Dashboard
 ![Employee Dashboard](screenshots/employee_dashboard.png)
 
-### Employee — Leave Requests
+### Employee - Leave Requests
 ![Leave Requests](screenshots/employee_leave-request.png)
 
-### Employee — Update Request
+### Employee - Update Request
 ![Update Request](screenshots/employee_update-request.png)
 
-### Employee — Attendance
+### Employee - Attendance
 ![Attendance](screenshots/employee_my-attendance.png)
 
-### Employee — Assignments
+### Employee - Assignments
 ![Assignments](screenshots/employee_assignments.png)
 
 ---
@@ -88,12 +88,12 @@ The main idea was to build something that actually works as a complete system, n
 - View personal profile (name, position, department, salary, status)
 - Submit leave requests with type, date range, and reason
 - Submit profile update requests (name, email, phone)
-- Track attendance — auto check-in on login, auto check-out on logout
+- Track attendance - auto check-in on login, auto check-out on logout
 - Submit assigned tasks with comments, links, or file uploads
 
 **Automated background tasks**
-- Leave status sync — automatically sets employee status to `ON_LEAVE` when leave starts, back to `ACTIVE` when it ends
-- Overdue task detection — marks assignments as `OVERDUE` when deadline passes
+- Leave status sync - automatically sets employee status to `ON_LEAVE` when leave starts, back to `ACTIVE` when it ends
+- Overdue task detection - marks assignments as `OVERDUE` when deadline passes
 
 **Email notifications**
 - Leave request approved / rejected
@@ -193,7 +193,7 @@ You'll need PostgreSQL running locally with a database called `ems`.
 ## Author
 
 **Davit Beridze**  
-Bachelor's thesis — Computer Science  
+Bachelor's thesis - Computer Science  
 Batumi Shota Rustaveli State University, 2026  
 Supervisor: Assistant Professor Besik Beridze
 
